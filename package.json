@@ -2,7 +2,7 @@
   "name": "portfolio-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://StephenRenda.github.io/PortfolioSite",
+  "homepage": "https://StephenRenda.github.io/PortfolioSite/pages/HomePage",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
