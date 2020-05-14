@@ -56,7 +56,7 @@ class App extends React.Component {
             </Navbar.Collapse>
           </Navbar>
           <Route
-            path="/"
+            path="/PortfolioSite/"
             exact
             render={() => (
               <HomePage
@@ -67,7 +67,7 @@ class App extends React.Component {
             )}
           />
           <Route
-            path="/about"
+            path="/PortfolioSite/about"
             exact
             render={() => (
               <AboutPage
@@ -78,7 +78,7 @@ class App extends React.Component {
             )}
           />
           <Route
-            path="/contact"
+            path="/PortfolioSite/contact"
             exact
             render={() => (
               <ContactPage
