@@ -43,20 +43,20 @@ class App extends React.Component {
             <Navbar.Toggle aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
-                <Link className="nav-link" to="/PortfolioSite">
+                <Link className="nav-link" to="/PortfolioSite/">
                   Home
                 </Link>
-                <Link className="nav-link" to="PortfolioSite/about">
+                <Link className="nav-link" to="/about">
                   About
                 </Link>
-                <Link className="nav-link" to="PortfolioSite/contact">
+                <Link className="nav-link" to="/contact">
                   Contact
                 </Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
           <Route
-            path="/"
+            path="/PortfolioSite/"
             exact
             render={() => (
               <HomePage
