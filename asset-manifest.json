@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/PortfolioSite/pages/HomePage/static/css/main.b7028b6b.chunk.css",
-    "main.js": "/PortfolioSite/pages/HomePage/static/js/main.b07f2081.chunk.js",
-    "main.js.map": "/PortfolioSite/pages/HomePage/static/js/main.b07f2081.chunk.js.map",
-    "runtime-main.js": "/PortfolioSite/pages/HomePage/static/js/runtime-main.150aa355.js",
-    "runtime-main.js.map": "/PortfolioSite/pages/HomePage/static/js/runtime-main.150aa355.js.map",
-    "static/css/2.829c9cb5.chunk.css": "/PortfolioSite/pages/HomePage/static/css/2.829c9cb5.chunk.css",
-    "static/js/2.268880f7.chunk.js": "/PortfolioSite/pages/HomePage/static/js/2.268880f7.chunk.js",
-    "static/js/2.268880f7.chunk.js.map": "/PortfolioSite/pages/HomePage/static/js/2.268880f7.chunk.js.map",
-    "index.html": "/PortfolioSite/pages/HomePage/index.html",
-    "precache-manifest.08e9c3bb1c9a85905ddbb62a7394b374.js": "/PortfolioSite/pages/HomePage/precache-manifest.08e9c3bb1c9a85905ddbb62a7394b374.js",
-    "service-worker.js": "/PortfolioSite/pages/HomePage/service-worker.js",
-    "static/css/2.829c9cb5.chunk.css.map": "/PortfolioSite/pages/HomePage/static/css/2.829c9cb5.chunk.css.map",
-    "static/css/main.b7028b6b.chunk.css.map": "/PortfolioSite/pages/HomePage/static/css/main.b7028b6b.chunk.css.map",
-    "static/js/2.268880f7.chunk.js.LICENSE.txt": "/PortfolioSite/pages/HomePage/static/js/2.268880f7.chunk.js.LICENSE.txt",
-    "static/media/2020 Resume (3).pdf": "/PortfolioSite/pages/HomePage/static/media/2020 Resume (3).31be6618.pdf",
-    "static/media/githublogo2.png": "/PortfolioSite/pages/HomePage/static/media/githublogo2.b3428fa4.png",
-    "static/media/resumelg2.png": "/PortfolioSite/pages/HomePage/static/media/resumelg2.bf9dc938.png"
+    "main.css": "/PortfolioSite/static/css/main.b7028b6b.chunk.css",
+    "main.js": "/PortfolioSite/static/js/main.00a574b7.chunk.js",
+    "main.js.map": "/PortfolioSite/static/js/main.00a574b7.chunk.js.map",
+    "runtime-main.js": "/PortfolioSite/static/js/runtime-main.68e8aab7.js",
+    "runtime-main.js.map": "/PortfolioSite/static/js/runtime-main.68e8aab7.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/PortfolioSite/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.268880f7.chunk.js": "/PortfolioSite/static/js/2.268880f7.chunk.js",
+    "static/js/2.268880f7.chunk.js.map": "/PortfolioSite/static/js/2.268880f7.chunk.js.map",
+    "index.html": "/PortfolioSite/index.html",
+    "precache-manifest.96f817d34525305b3e361001268a88aa.js": "/PortfolioSite/precache-manifest.96f817d34525305b3e361001268a88aa.js",
+    "service-worker.js": "/PortfolioSite/service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "/PortfolioSite/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.b7028b6b.chunk.css.map": "/PortfolioSite/static/css/main.b7028b6b.chunk.css.map",
+    "static/js/2.268880f7.chunk.js.LICENSE.txt": "/PortfolioSite/static/js/2.268880f7.chunk.js.LICENSE.txt",
+    "static/media/2020 Resume (3).pdf": "/PortfolioSite/static/media/2020 Resume (3).31be6618.pdf",
+    "static/media/githublogo2.png": "/PortfolioSite/static/media/githublogo2.b3428fa4.png",
+    "static/media/resumelg2.png": "/PortfolioSite/static/media/resumelg2.bf9dc938.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.150aa355.js",
+    "static/js/runtime-main.68e8aab7.js",
     "static/css/2.829c9cb5.chunk.css",
     "static/js/2.268880f7.chunk.js",
     "static/css/main.b7028b6b.chunk.css",
-    "static/js/main.b07f2081.chunk.js"
+    "static/js/main.00a574b7.chunk.js"
   ]
 }
