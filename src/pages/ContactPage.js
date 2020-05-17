@@ -14,7 +14,7 @@ class ContactPage extends React.Component {
       name: '',
       email: '',
       message: '',
-      disables: false,
+      disabled: false,
       emailSent: null,
     }
   }
@@ -36,29 +36,29 @@ class ContactPage extends React.Component {
     this.setState({
       diable: true,
     });
-
-    Axios.post('/api/email', this.state)
-      .then(res => {
+    const {name, email, message} = this.state;
+    Axios.post('http://localhost:8080/api/email', {name, email, message})
+       .then(res => {
         if(res.data.success) {
           this.setState({
-            disable: false,
+            disabled: false,
             emailSent: true
           });
         } else {
           this.setState({
-            disable: false,
+            disabled: false,
             emailSent: false
           });
         }
-      })
+      }) 
       .catch(err => {
-        console.log(err);
+        console.log(err.response);
 
         this.setState({
           disabled: false,
           emailSent: false
         });
-      })
+     })
 }
 
 render() {
@@ -83,7 +83,7 @@ render() {
               <Form.Control id="messages" name="message" as="textarea" rows="3" value={this.state.message} onChange={this.handleChange}/>
             </Form.Group>
 
-            <Button className="d-inline-block" variant="primary" type="submit" disable={this.state.disable}>
+            <Button className="d-inline-block" variant="primary" type="submit" disabled={this.state.disabled}>
               Send
             </Button>
 
