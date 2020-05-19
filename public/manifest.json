@@ -1,24 +1,20 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Stephen Renda Jr",
+  "name": "Stephen Renda Jr | Full Stack Developer",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "40x40",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "Signature-Logo.png",
       "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "250x250"
     }
+
   ],
-  "start_url": ".",
+  "start_url": "%PUBLIC_URL%/favicon.ico?v=2",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
