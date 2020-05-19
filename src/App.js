@@ -3,18 +3,21 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Navbar";
-import "./App.css";
+import './App.css';
 
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 
+import logo from './assets/images/Signature-Logo.png';
+
+
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "Stephen Renda",
+      title: "Stephen Renda Jr | Full Stack Developer",
       headerLinks: [
         { title: "Home", path: "/" },
         { title: "About", path: "/about" },
@@ -22,8 +25,8 @@ class App extends React.Component {
       ],
       home: {
         title: 'Persevere',
-        subTitle: "Projects that make a difference",
-        text: "Checkout my projects below",
+        subTitle: "Stephen Renda Jr",
+        text: "Full Stack Developer",
       },
       about: {
         title: "About Me",
@@ -36,10 +39,15 @@ class App extends React.Component {
 
   render() {
     return (
+      <div className= "background">
       <Router>
         <Container className="p=0" fluid={true}>
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand>Stephen Renda</Navbar.Brand>
+          <Navbar className="border-bottom" bg="transparent" expand="lg" style={{ color: "white" }}>
+            {/* <Navbar.Brand style={{ color: "white" }}>Stephen Renda Jr</Navbar.Brand> */}
+            <Navbar.Brand>
+            <img src={logo} style={{width:100, marginTop: -7}} alt="no img" />
+            </Navbar.Brand>
+
             <Navbar.Toggle aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
@@ -91,6 +99,7 @@ class App extends React.Component {
           <Footer />
         </Container>
       </Router>
+      </div>
     );
   }
 }

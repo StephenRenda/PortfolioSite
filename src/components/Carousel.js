@@ -4,8 +4,6 @@ import Row from 'react-bootstrap/Row';
 
 import github from '../assets/images/githublogo2.png';
 import resumelogo from '../assets/images/resumelg2.png';
-import resume from '../assets/2020 Resume (3).pdf';
-
 
 import Card from '../components/Card';
 
@@ -28,7 +26,7 @@ class Carousel extends React.Component {
                     title: 'Resume',
                     subTitle: 'Check out my resume',
                     imgSrc: resumelogo,
-                    link: resume,
+                    link: 'https://docs.google.com/document/d/1bgH4iU6wmvz7ORpQUvh8JxQpTiKiUzZKuU3Hun0sMoY/edit?usp=sharing',
                     selected: false    
                 }
             ]
