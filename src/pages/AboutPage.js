@@ -13,7 +13,7 @@ function AboutPage(props) {
 
         <p>My goal is to learn as much as possible, and once I am ready I plan to start my own business. I am consistently learning new things, currently I am studying C#, Angular, React, and dabbling in game development with Unity.</p>
       
-        <p>Currently I am working on Loan software for The Money Brokers business with a team of 6 other undergrads. We have ended our analzsys phase and now are moving into implementation.</p>
+        <p>Currently I am working on Loan software for The Money Brokers business with a team of 6 other undergrads. We have ended our analysis phase and now are moving into implementation.</p>
 
       </Content>
     </div>

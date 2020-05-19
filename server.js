@@ -6,7 +6,7 @@ const sendGrid = require('@sendGrid/mail');
 //const path = require('path');
 const app = express();
 
-let apiKey = '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';
+let apiKey = '8888';
 
 
 sendGrid.setApiKey(apiKey);
