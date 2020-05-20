@@ -12,8 +12,6 @@ import ContactPage from "./pages/ContactPage";
 
 import logo from './assets/images/Signature-Logo.png';
 
-console.log(process.env.REACT_APP_SENDGRID)
-
 class App extends React.Component {
   constructor(props) {
     super(props);

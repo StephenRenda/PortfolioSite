@@ -8,9 +8,6 @@ const app = express();
 require('dotenv').config()
 const key = process.env.REACT_APP_SENDGRID;
 
-
-
-console.log(key);
 sendGrid.setApiKey(key);
 
 app.use(bodyParser.json());
