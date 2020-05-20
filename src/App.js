@@ -12,6 +12,7 @@ import ContactPage from "./pages/ContactPage";
 
 import logo from './assets/images/Signature-Logo.png';
 
+console.log(process.env.REACT_APP_SENDGRID)
 
 class App extends React.Component {
   constructor(props) {
@@ -43,11 +44,9 @@ class App extends React.Component {
       <Router>
         <Container className="p=0" fluid={true}>
           <Navbar className="border-bottom" bg="transparent" expand="lg" style={{ color: "white" }}>
-            {/* <Navbar.Brand style={{ color: "white" }}>Stephen Renda Jr</Navbar.Brand> */}
             <Navbar.Brand>
             <img src={logo} style={{width:100, marginTop: -7}} alt="no img" />
             </Navbar.Brand>
-
             <Navbar.Toggle aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">

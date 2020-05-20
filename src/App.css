@@ -36,6 +36,10 @@
   color: white;
 }
 
+.navbar .navbar-toggler {
+  background-color: white !important;
+}
+
 .background {
   background-color: #404040;
   color: white;
