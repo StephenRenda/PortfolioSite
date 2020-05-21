@@ -18,9 +18,9 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.use((req, res, next) => {
-    // res.setHeader('Access-Control-Allow-Origin', '*'); // Change later to only allow our server
+    res.setHeader('Access-Control-Allow-Origin', '*'); // Change later to only allow our server
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE');
-    // res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
     next();
 });
 
