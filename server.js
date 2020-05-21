@@ -5,6 +5,8 @@ const cors = require('cors');
 const sendGrid = require('@sendGrid/mail');
 const app = express();
 
+const port = process.env.PORT || 8080;
+
 require('dotenv').config()
 const key = process.env.REACT_APP_SENDGRID;
 
@@ -45,7 +47,16 @@ app.post('/api/email', (req, res, next) => {
         
 });
 
-app.listen(8080);
+if (process.env.NODE_ENV === 'production') {
+  // Serve any static files
+  app.use(express.static(path.join(__dirname, 'client/build')));
+// Handle React routing, return all requests to React app
+  app.get('*', function(req, res) {
+    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+  });
+}
+
+app.listen(port, () => console.log(`Listening on port ${port}`));
 
 /*echo "export SENDGRID_API_KEY='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'" > sendgrid.env
 echo "sendgrid.env" >> .gitignore
