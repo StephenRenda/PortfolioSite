@@ -5,7 +5,7 @@ const cors = require('cors');
 const sendGrid = require('@sendGrid/mail');
 const app = express();
 
-const port = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5000;
 
 require('dotenv').config()
 const key = process.env.REACT_APP_SENDGRID;
@@ -56,4 +56,4 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
+app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
