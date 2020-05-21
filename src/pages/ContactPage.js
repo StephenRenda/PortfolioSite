@@ -32,12 +32,11 @@ class ContactPage extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault(); // Prevents refresh
-
     this.setState({
       diable: true,
     });
     const {name, email, message} = this.state; 
-    Axios.post('http://stephenrendajr.com/contact/api/email', {name, email, message})
+    Axios.post('http://www.stephenrendajr.com/PortfolioSite/api/email', {name, email, message})
        .then(res => {
          console.log("then", res);
 
