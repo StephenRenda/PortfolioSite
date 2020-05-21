@@ -5,16 +5,16 @@ const cors = require('cors');
 const sendGrid = require('@sendGrid/mail');
 const app = express();
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 
 require('dotenv').config()
 const key = process.env.REACT_APP_SENDGRID;
 
 sendGrid.setApiKey(key);
 
-app.use(bodyParser.json());
-
 app.use(cors());
+
+app.use(bodyParser.json());
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*'); // Change later to only allow our server
