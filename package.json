@@ -22,11 +22,13 @@
   },
   "scripts": {
     "start": "concurrently \"react-scripts start\" \"node server.js\"",
-    "build": "react-scripts build",
+    "build": "SET NODE_ENV=production && webpack-dev-server --host 127.0.0.1 --inline --history-api-fallback --content-base",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+
   },
   "eslintConfig": {
     "extends": "react-app"
