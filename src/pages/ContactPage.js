@@ -36,7 +36,7 @@ class ContactPage extends React.Component {
       diable: true,
     });
     const {name, email, message} = this.state; 
-    Axios.post('http://www.stephenrendajr.com/contact/PortfolioSite/api/email', {name, email, message})
+    Axios.post('https://portfolio-stephen-test.herokuapp.com/api/email', {name, email, message})
        .then(res => {
          console.log("then", res);
 
